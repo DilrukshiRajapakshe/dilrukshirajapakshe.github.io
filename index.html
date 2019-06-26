@@ -35,15 +35,7 @@
   <!-- Favicon -->
   <!-- <link rel="icon" href="favicon1.ico" /> -->
   <!-- / -->
-<script>
-  $(window).on("load", function(){
-    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'https://res.cloudinary.com/sewwandi/image/upload/v1561573746/favicon1.ico';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  });
-</script>
+
 </head>
 
 <!-- Body Start -->
@@ -814,7 +806,15 @@
 
   <!-- custom -->
   <script src="static/js/custom.js"></script>
-
+  <script>
+      $(window).on("load", function(){
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = 'https://res.cloudinary.com/sewwandi/image/upload/v1561573746/favicon1.ico';
+        document.getElementsByTagName('head')[0].appendChild(link);
+      });
+    </script>
 </body>
 <!-- Body End -->
 
